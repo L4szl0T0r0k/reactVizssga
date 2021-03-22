@@ -20,6 +20,10 @@ const App = () => {
       .finally(() => setIsLoadingHotels(false))
   }, [])
 
+  useEffect(() => {
+    setTimeout(() => setShownForm(true), 10000)
+  }, [])
+
 
   return (
     <div className="App">
